@@ -326,14 +326,14 @@ void gpio_irq_handler(uint gpio, uint32_t events)
          {
           
           ssd1306_draw_string(&ssd, "LED green ON ", 8, 30); //informa que o led foi ligado através de uma msg no display
-          printf("LED verde ligado");                        //informa que o led foi ligado através de uma msg no serial
+          printf("LED verde ligado\n");                        //informa que o led foi ligado através de uma msg no serial
           
         }
          else
          {
           
           ssd1306_draw_string(&ssd, "LED green OFF", 8, 30); //informa que o led foi desligado através de uma msg no display
-          printf("led verde desligado");                     //informa que o led foi desligado através de uma msg no serial
+          printf("led verde desligado\n");                     //informa que o led foi desligado através de uma msg no serial
          
         }
        }
@@ -344,14 +344,14 @@ void gpio_irq_handler(uint gpio, uint32_t events)
          {
           
           ssd1306_draw_string(&ssd, "LED blue ON ", 8, 48); //informa que o led foi ligado através de uma msg no display
-          printf("led azul ligado");                        //informa que o led foi ligado através de uma msg no serial
+          printf("led azul ligado\n");                        //informa que o led foi ligado através de uma msg no serial
           
         }
          else
          {
           
           ssd1306_draw_string(&ssd, "LED blue OFF", 8, 48); //informa que o led foi desligado através de uma msg no display
-          printf("led azul desligado");                     //informa que o led foi desligado através de uma msg no serial
+          printf("led azul desligado\n");                     //informa que o led foi desligado através de uma msg no serial
           
         }
        }
